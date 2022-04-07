@@ -3,6 +3,9 @@ import './App.css';
 import getGifs from './getGifs';
 import Gif from './Components/Gif.js';
 import ListOfGif from './Components/ListOfGif';
+import Search from './Components/search/Search';
+import Detail  from "./Components/Gif_tets"
+import logo from './logo.png'
 
 import { Link, Route } from "wouter";
 
@@ -13,8 +16,10 @@ function App() {
 
       <section className="App-content">
         
-<         h1> Router </h1>
-         
+      
+
+         <Search/>
+        <h1> Router </h1>
          
           <Link to='/gif/panda'>
             Gifs  de pandas
@@ -26,12 +31,15 @@ function App() {
             Gifs  de Chiles
             </Link>
            
+          
+
 
         <Route component={ListOfGif}  type
         path="/gif/:keyword"
         />
         
-
+        <Route  component={Detail} 
+                path="/gifdetails/:Id"/>
 
        </section>
     </div>
