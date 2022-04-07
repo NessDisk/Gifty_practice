@@ -21,14 +21,14 @@ function App() {
          <Search/>
         <h1> Router </h1>
          
-          <Link to='/gif/panda'>
-            Gifs  de pandas
+          <Link to='/gif/Europa'>
+            Gifs  de Europa
             </Link>
-            <Link to='/gif/Ecuador'>
-            Gifs  de Ecuador
+            <Link to='/gif/America'>
+            Gifs  de America
             </Link>
-            <Link to='/gif/Chiles'>
-            Gifs  de Chiles
+            <Link to='/gif/Asia'>
+            Gifs  de Asia
             </Link>
            
           
